@@ -1,0 +1,251 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>单据打印系统</title>  
+<link rel="stylesheet" href="reset.css" type="text/css" />
+<link rel="stylesheet" href="receipt.css" type="text/css" />
+<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+  <script src="jquery-ui-1.12.1/external/jquery/jquery1.12.4.js"></script>
+  <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+</head>  
+
+<body>  
+<div id="d1">
+<table>
+<tr >
+<td width="50px">单位</td>
+<td width="160px" class="ReUser"><input type="text" size="20" placeholder="收货单位名称" /></td>
+<td colspan="2" width="130px" class="tel"><input type="text" size="20" placeholder="电话" /></td>
+<!-- <td width="70px"><input type="text" size="20" "  /></td> -->
+<td colspan="2" width="160px" class="add"><input type="text" size="20" placeholder="地址" /></td>
+<!-- <td width="90px"><input type="text" size="20"  /></td> -->
+<td class ="Date"></td>
+</tr>
+<tr >
+<td ><font ">序号</font></td>
+<td ><font >规&emsp;格</font></td>
+<td ><font >单&emsp;位</font></td>
+<td ><font >数&emsp;量</font></td>
+<td ><font >单&emsp;价</font></td>
+<td ><font >金&emsp;额</font></td>
+<td ><font >备&emsp;注</font></td>
+
+
+</tr>
+<tr >
+<td >1</td>
+<td class="label"><input type="text" size="20" /></td>
+<td class="unit"><input type="text" size="20" placeholder="卷/瓶" /></td>
+<td class="quantity"><input type="text" size="20" /></td>
+<td class="price"><input type="text" size="20" /></td>
+<td class="money"><input type="text" size="20"  /></td>
+<td class="remark"><input type="text" size="20" placeholder="面积/物流" /></td>
+
+</tr>
+<tr >
+<td >2</td>
+<td class="label"><input type="text" size="20" /></td>
+<td class="unit"><input type="text" size="20" placeholder="卷/瓶" /></td>
+<td class="quantity"><input type="text" size="20" /></td>
+<td class="price"><input type="text" size="20" /></td>
+<td class="money"><input type="text" size="20"  /></td>
+<td class="remark"><input type="text" size="20" placeholder="面积/物流" /></td>
+
+</tr>
+<tr >
+<td >3</td>
+<td class="label"><input type="text" size="20" /></td>
+<td class="unit"><input type="text" size="20" placeholder="卷/瓶" /></td>
+<td class="quantity"><input type="text" size="20" /></td>
+<td class="price"><input type="text" size="20" /></td>
+<td class="money"><input type="text" size="20"  /></td>
+<td class="remark"><input type="text" size="20" placeholder="面积/物流" /></td>
+
+</tr>
+<tr >
+<td >4</td>
+<td class="label"><input type="text" size="20" /></td>
+<td class="unit"><input type="text" size="20" placeholder="卷/瓶" /></td>
+<td class="quantity"><input type="text" size="20" /></td>
+<td class="price"><input type="text" size="20" /></td>
+<td class="money"><input type="text" size="20"  /></td>
+<td class="remark"><input type="text" size="20" placeholder="面积/物流" /></td>
+
+</tr>
+<tr >
+<td >5</td>
+<td class="label"><input type="text" size="20" /></td>
+<td class="unit"><input type="text" size="20" placeholder="卷/瓶" /></td>
+<td class="quantity"><input type="text" size="20" /></td>
+<td class="price"><input type="text" size="20" /></td>
+<td class="money"><input type="text" size="20"  /></td>
+<td class="remark"><input type="text" size="20" placeholder="面积/物流" /></td>
+
+</tr>
+<tr >
+<td >6</td>
+<td class="label"><input type="text" size="20" /></td>
+<td class="unit"><input type="text" size="20" placeholder="卷/瓶" /></td>
+<td class="quantity"><input type="text" size="20" /></td>
+<td class="price"><input type="text" size="20" /></td>
+<td class="money"><input type="text" size="20"  /></td>
+<td class="remark"><input type="text" size="20" placeholder="面积/物流" /></td>
+
+</tr>
+<tr >
+<td >7</td>
+<td class="label"><input type="text" size="20" /></td>
+<td class="unit"><input type="text" size="20" placeholder="卷/瓶" /></td>
+<td class="quantity"><input type="text" size="20" /></td>
+<td class="price"><input type="text" size="20" /></td>
+<td class="money"><input type="text" size="20"  /></td>
+<td class="remark"><input type="text" size="20" placeholder="面积/物流" /></td>
+
+</tr>
+<tr >
+<td >8</td>
+<td class="label"><input type="text" size="20" /></td>
+<td class="unit"><input type="text" size="20" placeholder="卷/瓶" /></td>
+<td class="quantity"><input type="text" size="20" /></td>
+<td class="price"><input type="text" size="20" /></td>
+<td class="money"><input type="text" size="20"  /></td>
+<td class="remark"><input type="text" size="20" placeholder="面积/物流" /></td>
+
+
+
+</tr>
+<tr>
+<td>9</td>
+<td colspan="4" class="capitals"></td>
+<td class="all_money">
+</td>
+<td class="remark_2">
+</td>
+</tr>
+
+</table>
+<!-- <button id="Calc" class="b2 ui-button ui-widget ui-corner-all" type="button">计算金额</button> -->
+<button id="Auto" class="ui-button ui-widget ui-corner-all b2" type="button">自动填充<p class="ui-icon ui-icon-search"></p></button>
+
+<!-- <button id="Calc" class="b2 ui-button ui-widget ui-corner-all" type="button">计算金额<p class="ui-icon ui-icon-print"></p></button>
+ -->
+<button id="View" class="ui-button ui-widget ui-corner-all b2" type="button">预览单据<p class="ui-icon ui-icon-search"></p></button>
+
+<button class="b2 ui-button ui-widget ui-corner-all" type="button" onclick="doPrint()">立即打印<p class="ui-icon ui-icon-print"></p></button>  
+
+
+</div>
+
+
+<!--startprint--> 
+<div id="d2">
+<table>
+<tr >
+<td width="50px" height="32px"></td>
+<td width="160px" class="ReUser"></td>
+<td colspan="2" width="130px" class="tel"></td>
+<td colspan="2" width="160px" class="add"></td>
+<td class ="Date"></td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+
+</tr><tr >
+<td ></td>
+<td class="label"></td>
+<td class="unit"></td>
+<td class="quantity"></td>
+<td class="price"></td>
+<td class="money"></td>
+<td class="remark"></td>
+
+</tr><tr >
+<td ></td>
+<td class="label"></td>
+<td class="unit"></td>
+<td class="quantity"></td>
+<td class="price"></td>
+<td class="money"></td>
+<td class="remark"></td>
+
+
+</tr><tr >
+<td ></td>
+<td class="label"></td>
+<td class="unit"></td>
+<td class="quantity"></td>
+<td class="price"></td>
+<td class="money"></td>
+<td class="remark"></td>
+
+
+</tr><tr >
+<td ></td>
+<td class="label"></td>
+<td class="unit"></td>
+<td class="quantity"></td>
+<td class="price"></td>
+<td class="money"></td>
+<td class="remark"></td>
+
+
+</tr><tr >
+<td ></td>
+<td class="label"></td>
+<td class="unit"></td>
+<td class="quantity"></td>
+<td class="price"></td>
+<td class="money"></td>
+<td class="remark"></td>
+
+
+</tr><tr >
+<td ></td>
+<td class="label"></td>
+<td class="unit"></td>
+<td class="quantity"></td>
+<td class="price"></td>
+<td class="money"></td>
+<td class="remark"></td>
+
+
+</tr><tr >
+<td ></td>
+<td class="label"></td>
+<td class="unit"></td>
+<td class="quantity"></td>
+<td class="price"></td>
+<td class="money"></td>
+<td class="remark"></td>
+
+
+</tr><tr >
+<td ></td>
+<td class="label"></td>
+<td class="unit"></td>
+<td class="quantity"></td>
+<td class="price"></td>
+<td class="money"></td>
+<td class="remark"></td>
+
+</tr>
+<tr>
+<td ></td>
+<td colspan="4" class="capitals"></td>
+<td class="all_money"></td>
+<td class="remark_2"></td>
+</tr>
+
+</table>
+ </div> 
+<!--endprint--> 
+</body>
+<script src="main.js"></script>  
+</html>  
