@@ -48,7 +48,7 @@ input{
 	opacity:1;
 	background-size:100%;
 	width:794px; height:545px; 
-	display: block;
+	display: none;
 }
 /* 计算金额和预览单据样式 */
 .b2{

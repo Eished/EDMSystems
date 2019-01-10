@@ -198,7 +198,7 @@ var view = View.onclick = function(){
   }
   }
   //显示隐藏内容
-  // document.getElementById('d2').style.display = 'block';
+  $("#d2").css("display","block");
 }
 
 
