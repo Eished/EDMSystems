@@ -30,8 +30,8 @@
       { label: "1.52无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"304" },
       { label: "户外墨水", category: "墨水", unit:"瓶", price:"100", acreage:"" },
       { label: "户内墨水", category: "墨水", unit:"瓶", price:"50", acreage:"" },
-      { label: "UV墨水硬墨", category: "墨水", unit:"瓶", price:"500", acreage:"" }
-      { label: "UV墨水软墨", category: "墨水", unit:"瓶", price:"500", acreage:"" }
+      { label: "UV墨水硬墨", category: "墨水", unit:"瓶", price:"500", acreage:"" },
+      { label: "UV墨水软墨", category: "墨水", unit:"瓶", price:"500", acreage:"" },
       { label: "清洗液", category: "墨水", unit:"瓶", price:"100", acreage:"" },
       { label: "UV清洗液", category: "墨水", unit:"瓶", price:"100", acreage:"" },
     ];
