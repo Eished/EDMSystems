@@ -70,3 +70,32 @@ input{
     margin: 2px 0px 0px;
     line-height: 0px;
   }
+
+/*各类input框宽度*/
+.ReUser > input {
+	width: 140px;
+}
+.tel > input {
+	width:120px;
+}
+.add > input {
+	width: 150px;
+}
+ .label > input {
+	width: 140px;
+ }
+ .unit > input {
+ 	width: 50px;
+ }
+ .quantity > input {
+ 	width: 50px;
+ }
+ .price > input {
+ 	width: 60px;
+ }
+ .money > input {
+ 	width: 60px;
+ }
+ .remark > input {
+ 	width: 160px;
+ }
