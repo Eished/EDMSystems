@@ -191,17 +191,26 @@ var view = View.onclick = function(){
   $(".quantity")[$v + 8].innerText = $(".quantity > input")[$v].value;
   $(".price")[$v + 8].innerText = $(".price > input")[$v].value;
   $(".money")[$v + 8].innerText = $(".money > input")[$v].value;
-  if ($(".remark")[$v + 8].innerText) {
-
+  //判断备注是否为数字，是则用calc中的值，不是则用当前输入覆盖
+  if (IsNum($(".remark > input")[$v].value)) {
+    
   }else {
-    $(".remark")[$v + 8].innerText = $(".remark > input")[$v].value;  
+    $(".remark")[$v + 8].innerText = $(".remark > input")[$v].value; 
   }
   }
   //显示隐藏内容
   $("#d2").css("display","block");
 }
 
-
+//判断是否为数字
+function IsNum(s)
+{
+    if (s!=null && s!="")
+    {
+        return !isNaN(s);
+    }
+    return false;
+}
 
 //自动填入对应规格所对应的数据库值
 Auto.onclick = function(){
@@ -241,7 +250,7 @@ var auto = function(){
           inputs[i1].value = data[i2].acreage;
           var acreage = inputs[i1].value;
           //判断备注是否是数字
-          if (Number(acreage)) {
+          if (IsNum(acreage)) {
             money = Number(quantity) * Number(price) * Number(acreage);
             i1--;
             inputs[i1].value = Number(money.toFixed(f));
@@ -278,7 +287,7 @@ var calc = function(){
       var $acreage = $("input")[$i].value;//平方acreage
       //计算数量*单价*平方
       //判断备注是否是数字
-      if (Number($acreage)) {
+      if (IsNum($acreage)) {
         $money = Number($quantity) * Number($price) * Number($acreage);
         // console.log($money);
         $i--;
@@ -286,7 +295,7 @@ var calc = function(){
         $i++;
         //把remark栏填充单位
         $r = ($i - 2)/ 6 - 1;
-        $(".remark")[$r + 8].innerText = $("input")[$i].value + "平方米 200米";
+        $(".remark")[$r + 8].innerText = $("input")[$i].value + "㎡ 200米";
       }else{
       $money = Number($quantity) * Number($price);
         if ($money > 0) {
