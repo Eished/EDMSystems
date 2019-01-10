@@ -5,7 +5,7 @@
 【打印函数】
 【预览写入网页函数】
 【自动补全函数】
-【】
+【数字金额大写转换(可以处理整数,小数,负数)】
 
 作者Eished QQ：212179840
 更新日期：2019年1月9日
@@ -156,7 +156,7 @@ document.onkeydown=function(event){
     if(e && e.keyCode==13){
          // $("save_btn").click();
          //使用回车键读取数据库数据
-         auto2();
+         auto();
     }
 };
 
