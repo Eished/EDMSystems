@@ -8,7 +8,6 @@
 【数字金额大写转换(可以处理整数,小数,负数)】
 
 作者Eished QQ：212179840
-更新日期：2019年1月9日
 */
 
 // 数据仅供测试使用
@@ -173,7 +172,7 @@ document.onkeydown=function(event){
     }
 };
 
-//预览写入网页函数
+//预览+写入网页函数
 var view = View.onclick = function(){
   //调用计算总金额函数
   calc();
@@ -186,17 +185,17 @@ var view = View.onclick = function(){
   //遍历8行表格内容
   var $len = $("td > input").length / 6 ;
   for(; $v < parseInt($len); $v++){
-  $(".label")[$v + 8].innerText = $(".label > input")[$v].value;
-  $(".unit")[$v + 8].innerText = $(".unit > input")[$v].value;
-  $(".quantity")[$v + 8].innerText = $(".quantity > input")[$v].value;
-  $(".price")[$v + 8].innerText = $(".price > input")[$v].value;
-  $(".money")[$v + 8].innerText = $(".money > input")[$v].value;
-  //判断备注是否为数字，是则用calc中的值，不是则用当前输入覆盖
-  if (IsNum($(".remark > input")[$v].value)) {
-    
-  }else {
-    $(".remark")[$v + 8].innerText = $(".remark > input")[$v].value; 
-  }
+    $(".label")[$v + 8].innerText = $(".label > input")[$v].value;
+    $(".unit")[$v + 8].innerText = $(".unit > input")[$v].value;
+    $(".quantity")[$v + 8].innerText = $(".quantity > input")[$v].value;
+    $(".price")[$v + 8].innerText = $(".price > input")[$v].value;
+    $(".money")[$v + 8].innerText = $(".money > input")[$v].value;
+    //判断备注是否为数字，是则用calc中的值，不是则用当前输入覆盖
+    if (IsNum($(".remark > input")[$v].value)) {
+      
+    }else {
+      $(".remark")[$v + 8].innerText = $(".remark > input")[$v].value; 
+    }
   }
   //显示隐藏内容
   $("#d2").css("display","block");
@@ -269,8 +268,8 @@ var auto = function(){
 
 
 //计算总金额
-var f = 1;//保留小数位数
-var f_money = 0;//保留小数位数
+var f = 1;//统一保留小数位数
+var f_money = 0;//总金额保留小数位数
 //无底膜金额计算函数 宽度*长度*单价*数量 
 //墨水金额计算函数 数量*单价
 var calc = function(){
