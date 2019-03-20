@@ -11,29 +11,29 @@
 */
 
 // 数据仅供测试使用
-    var data = [
-      { label: "棉棒", category: "配件", unit:"个/包", price:"10", acreage:"" },
-      { label: "墨垫", category: "配件", unit:"个/包", price:"10", acreage:"" },
-      { label: "光栅", category: "配件", unit:"个/包", price:"10", acreage:"" },
-      { label: "0.82无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"164" },
-      { label: "0.82无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"164" },
-      { label: "0.914无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"182.8" },
-      { label: "0.914无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"182.8" },
-      { label: "1.07无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"214" },
-      { label: "1.07无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"214" },
-      { label: "1.27无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"254" },
-      { label: "1.27无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"254" },
-      { label: "1.37无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"274" },
-      { label: "1.37无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"274" },
-      { label: "1.52无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"304" },
-      { label: "1.52无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"304" },
-      { label: "户外墨水", category: "墨水", unit:"瓶", price:"100", acreage:"" },
-      { label: "户内墨水", category: "墨水", unit:"瓶", price:"50", acreage:"" },
-      { label: "UV墨水硬墨", category: "墨水", unit:"瓶", price:"500", acreage:"" },
-      { label: "UV墨水软墨", category: "墨水", unit:"瓶", price:"500", acreage:"" },
-      { label: "清洗液", category: "墨水", unit:"瓶", price:"100", acreage:"" },
-      { label: "UV清洗液", category: "墨水", unit:"瓶", price:"100", acreage:"" },
-    ];
+var data = [
+  { label: "棉棒", category: "配件", unit:"个/包", price:"10", acreage:"" },
+  { label: "墨垫", category: "配件", unit:"个/包", price:"10", acreage:"" },
+  { label: "光栅", category: "配件", unit:"个/包", price:"10", acreage:"" },
+  { label: "0.82无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"164" },
+  { label: "0.82无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"164" },
+  { label: "0.914无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"182.8" },
+  { label: "0.914无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"182.8" },
+  { label: "1.07无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"214" },
+  { label: "1.07无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"214" },
+  { label: "1.27无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"254" },
+  { label: "1.27无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"254" },
+  { label: "1.37无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"274" },
+  { label: "1.37无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"274" },
+  { label: "1.52无底纸光膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"304" },
+  { label: "1.52无底纸哑膜", category: "无底纸膜", unit:"卷", price:"1", acreage:"304" },
+  { label: "户外墨水", category: "墨水", unit:"瓶", price:"100", acreage:"" },
+  { label: "户内墨水", category: "墨水", unit:"瓶", price:"50", acreage:"" },
+  { label: "UV墨水硬墨", category: "墨水", unit:"瓶", price:"500", acreage:"" },
+  { label: "UV墨水软墨", category: "墨水", unit:"瓶", price:"500", acreage:"" },
+  { label: "清洗液", category: "墨水", unit:"瓶", price:"100", acreage:"" },
+  { label: "UV清洗液", category: "墨水", unit:"瓶", price:"100", acreage:"" },
+];
 
 
 
