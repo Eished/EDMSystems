@@ -16,7 +16,7 @@ table{
 	/*height:340px;*/
 	width: 720px;
 	position: relative;
-	top: 105px;/*表格对应纸张纵向偏移*/
+	top: 100px;/*表格对应纸张纵向偏移*/
 	left: 40px;/*表格对应纸张横向偏移*/
 }
 
@@ -60,7 +60,7 @@ input{
 	color: #000;
 	position: relative;
 	top: 115px;/*表格对应纸张纵向偏移*/
-	left: 400px;/*表格对应纸张横向偏移*/
+	left: 280px;/*表格对应纸张横向偏移*/
 }
 
 /*自动补下拉分类全样式表*/

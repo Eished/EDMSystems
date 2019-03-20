@@ -115,7 +115,6 @@ function shiftLeft(number, digit){
 
 
 
-
 //自动读取日期函数
 Date.prototype.format = function (format) {
            var args = {
@@ -142,6 +141,22 @@ Date.prototype.format = function (format) {
 $(".Date").text(new Date().format("yyyy年MM月dd日 hh:mm"))
 
 
+
+//隐藏小时和分钟
+var i = 0;
+function hideTime(){
+  if (i === 0) {
+    $(".Date").text(new Date().format("yyyy年MM月dd日"));
+    $("#hideTime").text("显示时间");
+    i++;
+  }else{
+    $(".Date").text(new Date().format("yyyy年MM月dd日 hh:mm"));
+    $("#hideTime").text("隐藏时间");
+    i--;
+  }
+}
+
+
 //打印函数
 function doPrint() { 
     //调用计算总金额函数
@@ -156,7 +171,8 @@ function doPrint() {
   prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17);      
   prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));      
   window.document.body.innerHTML=prnhtml;   
-  window.print();      
+  window.print();     
+  self.location=document.referrer;
 }      
 
 
