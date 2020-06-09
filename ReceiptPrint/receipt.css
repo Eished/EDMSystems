@@ -1,104 +1,132 @@
-@charset "utf-8";  
+@charset "utf-8";
 /* 
-作者Eished QQ：212179840
+作者Eished QQ：
 更新日期：2018年12月30日 */
 
 
-body{
+body {
 	width: 794px;
 	margin: 0 auto;
-	font-size: 14px;/* 初始化字体大小 */
+	font-size: 14px;
+	/* 初始化字体大小 */
 
 }
 
-table{
-	border:1px solid #000;/*黑色1像素粗边框*/
+table {
+	border: 1px solid #000;
+	/*黑色1像素粗边框*/
 	/*height:340px;*/
 	width: 720px;
 	position: relative;
-	top: 100px;/*表格对应纸张纵向偏移*/
-	left: 40px;/*表格对应纸张横向偏移*/
+	top: 100px;
+	/*表格对应纸张纵向偏移*/
+	left: 40px;
+	/*表格对应纸张横向偏移*/
 }
 
-td{
-border:1px solid #fff;/*这个是单元格，不给他要边框*/
-height: 30px;
-text-align:center;/** 设置水平方向居中 */
-vertical-align:middle;/** 设置垂直方向居中 */
+td {
+	border: 1px solid #fff;
+	/*这个是单元格，不给他要边框*/
+	height: 30px;
+	text-align: center;
+	/** 设置水平方向居中 */
+	vertical-align: middle;
+	/** 设置垂直方向居中 */
 }
 
-th{
-border:1px solid #fff;/*这个是单元格，不给他要边框*/
-height: 30px;
-text-align:center;/** 设置水平方向居中 */
-vertical-align:middle;/** 设置垂直方向居中 */
+th {
+	border: 1px solid #fff;
+	/*这个是单元格，不给他要边框*/
+	height: 30px;
+	text-align: center;
+	/** 设置水平方向居中 */
+	vertical-align: middle;
+	/** 设置垂直方向居中 */
 
 }
+
 /* 输入框总样式 */
-input{
-	height:20px;
+input {
+	height: 20px;
 	width: 100px;
 }
 
 /* 输入表格样式 */
-#d1{background-image:url(receipt-main.jpg);
-	opacity:1;
-	background-size:100%;
-	width:794px; height:545px; }
+#d1 {
+	background-image: url(receipt-main.jpg);
+	opacity: 1;
+	background-size: 100%;
+	width: 794px;
+	height: 545px;
+}
+
 /* 预览及打印表格样式 */
-#d2{background-image:url(receipt.jpg);
-	opacity:1;
-	background-size:100%;
-	width:794px; height:545px; 
+#d2 {
+	background-image: url(receipt.jpg);
+	opacity: 1;
+	background-size: 100%;
+	width: 794px;
+	height: 545px;
 	display: none;
 }
+
 /* 计算金额和预览单据样式 */
-.b2{
+.b2 {
 	margin-left: 15px;
 	margin-top: 10px;
 	height: 50px;
 	color: #000;
 	position: relative;
-	top: 115px;/*表格对应纸张纵向偏移*/
-	left: 280px;/*表格对应纸张横向偏移*/
+	top: 115px;
+	/*表格对应纸张纵向偏移*/
+	left: 280px;
+	/*表格对应纸张横向偏移*/
 }
 
 /*自动补下拉分类全样式表*/
 .ui-autocomplete-category {
-    font-weight: none;
-    font-size: 14px;
-    color: green;
-    padding: 8px 4px;
-    margin: 2px 0px 0px;
-    line-height: 0px;
-  }
+	font-weight: none;
+	font-size: 14px;
+	color: green;
+	padding: 8px 4px;
+	margin: 2px 0px 0px;
+	line-height: 0px;
+}
 
 /*各类input框宽度*/
-.ReUser > input {
+.ReUser>input {
 	width: 140px;
 }
-.tel > input {
-	width:120px;
+
+.tel>input {
+	width: 120px;
 }
-.add > input {
+
+.add>input {
 	width: 150px;
 }
- .label > input {
+
+.label>input {
 	width: 140px;
- }
- .unit > input {
- 	width: 60px;
- }
- .quantity > input {
- 	width: 60px;
- }
- .price > input {
- 	width: 75px;
- }
- .money > input {
- 	width: 75px;
- 	/* background:transparent; */
- }
- .remark > input {
- 	width: 160px;
- }
+}
+
+.unit>input {
+	width: 60px;
+}
+
+.quantity>input {
+	width: 60px;
+}
+
+.price>input {
+	width: 75px;
+}
+
+.money>input {
+	width: 75px;
+	/* background:transparent; */
+}
+
+.remark>input {
+	width: 160px;
+}
